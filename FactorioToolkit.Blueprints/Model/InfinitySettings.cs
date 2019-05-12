@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-using FactorioToolkit.Blueprints.Model.Filter;
+﻿using FactorioToolkit.Blueprints.Model.Filter;
 
 using Newtonsoft.Json;
 

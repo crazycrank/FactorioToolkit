@@ -1,11 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using FactorioToolkit.Domain.Entities;
+using FactorioToolkit.Domain.Items;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-using Newtonsoft.Json;
 
 using Shouldly;
 
@@ -31,7 +29,7 @@ namespace FactorioToolkit.Blueprints.UnitTests
         public async Task GetBlueprint_ReturnBlueprintToJson()
         {
             var blueprint = await utilities.GetBlueprint(BlueprintString).ConfigureAwait(false);
-            var result = new List<Entity>();
+            var result = new List<Item>();
 
             foreach (var jsonEntity in blueprint.Entities)
             {

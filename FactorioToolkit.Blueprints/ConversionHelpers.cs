@@ -2,8 +2,9 @@
 
 using FactorioToolkit.Blueprints.Model;
 using FactorioToolkit.Blueprints.Model.Connection;
-using FactorioToolkit.Domain.Entities.CircuitNetwork;
-using FactorioToolkit.Domain.Entities.ValueObjects;
+using FactorioToolkit.Domain.Items.Belts;
+using FactorioToolkit.Domain.Items.CircuitNetwork;
+using FactorioToolkit.Domain.Items.ValueObjects;
 
 using Position = FactorioToolkit.Blueprints.Model.Data.Position;
 
@@ -24,8 +25,8 @@ namespace FactorioToolkit.Blueprints
                    Direction.NW => Directions.NorthWest,
                    _ => Directions.North
                    };
-        internal static Domain.Entities.ValueObjects.Position ToDomainValue(this Position position)
-            => new Domain.Entities.ValueObjects.Position(position.X, position.Y);
+        internal static Domain.Items.ValueObjects.Position ToDomainValue(this Position position)
+            => new Domain.Items.ValueObjects.Position(position.X, position.Y);
 
         internal static CircuitConnection ToDomainValue(this ConnectionPoint? connection)
             => new CircuitConnection(new CircuitPort(), null);
@@ -37,20 +38,20 @@ namespace FactorioToolkit.Blueprints
         internal static CircuitPort ToDomainValue(this ConnectionData? connection)
             => new CircuitPort();
 
-        internal static Domain.Entities.Belts.UndergroundBeltType ParseBeltValue(this string? beltType)
+        internal static UndergroundBeltType ParseBeltValue(this string? beltType)
             => beltType switch
                    {
-                   "input" => Domain.Entities.Belts.UndergroundBeltType.Input,
-                   "output" => Domain.Entities.Belts.UndergroundBeltType.Output,
+                   "input" => UndergroundBeltType.Input,
+                   "output" => UndergroundBeltType.Output,
                    _ => throw new ArgumentOutOfRangeException(nameof(beltType), beltType, $"Unexpected value: {beltType}")
                    };
 
-        internal static Domain.Entities.Belts.SplitterPriority ParseSplitterPriority(this string? priority)
+        internal static SplitterPriority ParseSplitterPriority(this string? priority)
             => priority switch
                    {
-                   "left" => Domain.Entities.Belts.SplitterPriority.Left,
-                   "right" => Domain.Entities.Belts.SplitterPriority.Right,
-                   _ => Domain.Entities.Belts.SplitterPriority.None,
+                   "left" => SplitterPriority.Left,
+                   "right" => SplitterPriority.Right,
+                   _ => SplitterPriority.None,
                    };
     }
 }

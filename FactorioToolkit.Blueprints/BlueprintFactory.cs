@@ -1,17 +1,15 @@
-﻿using FactorioToolkit.Domain.Entities;
-using FactorioToolkit.Domain.Entities.Direction;
-using FactorioToolkit.Domain.Entities.Pipes;
-using System;
-using System.Reflection.Emit;
+﻿using System;
 
-using FactorioToolkit.Domain.Entities.Belts;
-using FactorioToolkit.Domain.Entities.Inserters;
+using FactorioToolkit.Domain.Items;
+using FactorioToolkit.Domain.Items.Belts;
+using FactorioToolkit.Domain.Items.Inserters;
+using FactorioToolkit.Domain.Items.Pipes;
 
 namespace FactorioToolkit.Blueprints
 {
     public class BlueprintFactory
     {
-        public Entity GetDomainEntity(Model.JsonEntity entity)
+        public Item GetDomainEntity(Model.JsonEntity entity)
             => entity switch
                    {
                    { Position: var p, Name: "storage-tank", Direction: var d, Connections: var c }
@@ -28,7 +26,7 @@ namespace FactorioToolkit.Blueprints
                    => new Substation(p.ToDomainValue(), (c?.Default).ToDomainValue()),
 
                        // pipes
-                       { Position: var p, Name: "pipe" } => (Entity)new Pipe(p.ToDomainValue()),
+                       { Position: var p, Name: "pipe" } => (Item)new Pipe(p.ToDomainValue()),
                    { Position: var p, Name: "pipe-to-ground", Direction: var d } => new PipeToGround(p.ToDomainValue(), d.ToDomainValue()),
                    { Position: var p, Name: "heat-pipe" } => new HeatPipe(p.ToDomainValue()),
 
