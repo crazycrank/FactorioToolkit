@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FactorioToolkit.Blueprints.Model
+namespace FactorioToolkit.Infrastructure.Model
 {
     public class SpeakerAlertParameter
     {

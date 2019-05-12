@@ -8,7 +8,10 @@
             Y = y;
         }
 
-        public decimal X { get; set; }
-        public decimal Y { get; set; }
+        public decimal X { get; }
+        public decimal Y { get; }
+
+        public override string ToString()
+            => $"({X}/{Y})";
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace FactorioToolkit.Blueprints.Model.Data
+﻿namespace FactorioToolkit.Infrastructure.Model.Data
 {
     public class Icon
     {

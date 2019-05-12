@@ -4,18 +4,20 @@ using FactorioToolkit.Domain.Items.ValueObjects;
 
 namespace FactorioToolkit.Domain.Items.Inserters
 {
-    public abstract class InserterBase : Item, IDirection, IControllable
+    public abstract class InserterBase : Item, IDirection, IControllable, ICircuitInput 
     {
-        protected InserterBase(Position position, Directions direction, CircuitConnection input, Behaviour behaviour, int? overrideStackSize)
+        protected InserterBase(Position position, Directions direction, CircuitAccessPoint input, Behaviour behaviour, int? overrideStackSize)
             : base(position)
         {
             Direction = direction;
-            OverrideStackSize = overrideStackSize;
+            Input = input;
             Behaviour = behaviour;
+            OverrideStackSize = overrideStackSize;
         }
 
         public Directions Direction { get; }
         public Behaviour Behaviour { get; }
+        public CircuitAccessPoint Input { get; }
         public int? OverrideStackSize { get; }
     }
 }

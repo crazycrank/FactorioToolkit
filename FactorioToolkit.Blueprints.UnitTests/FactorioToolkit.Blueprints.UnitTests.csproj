@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FactorioToolkit.Blueprints\FactorioToolkit.Blueprints.csproj" />
+    <ProjectReference Include="..\FactorioToolkit.Blueprints\FactorioToolkit.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

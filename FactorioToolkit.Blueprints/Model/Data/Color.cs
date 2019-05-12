@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FactorioToolkit.Blueprints.Model.Data
+namespace FactorioToolkit.Infrastructure.Model.Data
 {
     public struct Color
     {

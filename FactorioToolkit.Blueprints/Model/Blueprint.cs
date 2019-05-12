@@ -1,8 +1,8 @@
-﻿using FactorioToolkit.Blueprints.Model.Data;
+﻿using FactorioToolkit.Infrastructure.Model.Data;
 
 using Newtonsoft.Json;
 
-namespace FactorioToolkit.Blueprints.Model
+namespace FactorioToolkit.Infrastructure.Model
 {
     public class Blueprint
     {
@@ -12,7 +12,7 @@ namespace FactorioToolkit.Blueprints.Model
         [JsonProperty("label_color")]
         public Color? LabelColor { get; set; }
 
-        public JsonEntity[] Entities { get; set; }
+        public Entity[] Entities { get; set; }
         public Tile[] Tiles { get; set; }
         public Icon[] Icons { get; set; }
 

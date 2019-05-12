@@ -5,7 +5,7 @@ namespace FactorioToolkit.Domain.Items.Belts
 {
     public class ExpressTransportBelt : BeltBase
     {
-        public ExpressTransportBelt(Position position, Directions direction, CircuitConnection input)
+        public ExpressTransportBelt(Position position, Directions direction, CircuitAccessPoint input)
             : base(position, direction, input)
         {
         }

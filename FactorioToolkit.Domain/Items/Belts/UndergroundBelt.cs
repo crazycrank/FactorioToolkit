@@ -5,7 +5,7 @@ namespace FactorioToolkit.Domain.Items.Belts
 {
     public class UndergroundBelt : UndergroundBeltBase
     {
-        public UndergroundBelt(Position position, Directions direction, CircuitConnection input, UndergroundBeltType type)
+        public UndergroundBelt(Position position, Directions direction, CircuitAccessPoint input, UndergroundBeltType type)
             : base(position, direction, input, type)
         {
         }

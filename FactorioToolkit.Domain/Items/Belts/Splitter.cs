@@ -5,7 +5,7 @@ namespace FactorioToolkit.Domain.Items.Belts
 {
     public class Splitter : SplitterBase
     {
-        public Splitter(Position position, Directions direction, CircuitConnection input, SplitterPriority inputPriority = SplitterPriority.None, SplitterPriority outputPriority = SplitterPriority.None)
+        public Splitter(Position position, Directions direction, CircuitAccessPoint input, SplitterPriority inputPriority = SplitterPriority.None, SplitterPriority outputPriority = SplitterPriority.None)
             : base(position, direction, input, inputPriority, outputPriority)
         {
         }

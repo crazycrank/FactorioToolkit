@@ -5,7 +5,7 @@ namespace FactorioToolkit.Domain.Items.Inserters
 {
     public class StackInserter : InserterBase
     {
-        public StackInserter(Position position, Directions direction, CircuitConnection input, Behaviour behaviour, int? overrideStackSize)
+        public StackInserter(Position position, Directions direction, CircuitAccessPoint input, Behaviour behaviour, int? overrideStackSize)
             : base(position, direction, input, behaviour, overrideStackSize)
         {
         }

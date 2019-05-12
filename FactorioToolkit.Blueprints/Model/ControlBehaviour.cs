@@ -1,4 +1,4 @@
-﻿namespace FactorioToolkit.Blueprints.Model
+﻿namespace FactorioToolkit.Infrastructure.Model
 {
     public class ControlBehaviour
     {

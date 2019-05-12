@@ -4,7 +4,16 @@ namespace FactorioToolkit.Domain.Items.CircuitNetwork
 {
     public class CircuitPort
     {
-        // TODO Lazy load entities
-        public IList<Item> Connections { get; } = new List<Item>();
+        public ISet<Item> ConnectedItems { get; } = new HashSet<Item>();
+
+        public void AddConnection(Item connectedItem)
+        {
+            ConnectedItems.Add(connectedItem);
+        }
+
+        public void RemoveConnection(Item connectedItem)
+        {
+            ConnectedItems.Remove(connectedItem);
+        }
     }
 }

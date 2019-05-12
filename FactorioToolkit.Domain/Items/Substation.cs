@@ -3,14 +3,14 @@ using FactorioToolkit.Domain.Items.ValueObjects;
 
 namespace FactorioToolkit.Domain.Items
 {
-    public class Substation : Item, ICircuitPortSingle
+    public class Substation : Item, ICircuitInput
     {
-        public Substation(Position position, CircuitConnection input)
+        public Substation(Position position, CircuitAccessPoint input)
             : base(position)
         {
             Input = input;
         }
 
-        public CircuitConnection Input { get; }
+        public CircuitAccessPoint Input { get; }
     }
 }

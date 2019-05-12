@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FactorioToolkit.Blueprints.Model.Connection
+namespace FactorioToolkit.Infrastructure.Model.Connection
 {
     public class ConnectionData
     {

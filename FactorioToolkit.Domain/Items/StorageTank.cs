@@ -4,9 +4,9 @@ using FactorioToolkit.Domain.Items.ValueObjects;
 
 namespace FactorioToolkit.Domain.Items
 {
-    public class StorageTank : Item, IDirection, ICircuitPortSingle
+    public class StorageTank : Item, IDirection, ICircuitInput
     {
-        public StorageTank(Position position, Directions direction, CircuitConnection input)
+        public StorageTank(Position position, Directions direction, CircuitAccessPoint input)
             : base(position)
         {
             Direction = direction;
@@ -14,6 +14,6 @@ namespace FactorioToolkit.Domain.Items
         }
 
         public Directions Direction { get; }
-        public CircuitConnection Input { get; }
+        public CircuitAccessPoint Input { get; }
     }
 }

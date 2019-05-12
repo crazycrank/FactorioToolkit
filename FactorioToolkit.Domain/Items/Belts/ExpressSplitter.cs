@@ -7,7 +7,7 @@ namespace FactorioToolkit.Domain.Items.Belts
     {
         public ExpressSplitter(Position position,
                                Directions direction,
-                               CircuitConnection input,
+                               CircuitAccessPoint input,
                                SplitterPriority inputPriority = SplitterPriority.None,
                                SplitterPriority outputPriority = SplitterPriority.None)
             : base(position, direction, input, inputPriority, outputPriority)

@@ -1,14 +1,17 @@
-﻿using FactorioToolkit.Blueprints.Model.Data;
-using FactorioToolkit.Blueprints.Model.Filter;
+﻿using System.Diagnostics;
+
+using FactorioToolkit.Infrastructure.Model.Data;
+using FactorioToolkit.Infrastructure.Model.Filter;
 
 using Newtonsoft.Json;
 
-namespace FactorioToolkit.Blueprints.Model
+namespace FactorioToolkit.Infrastructure.Model
 {
-    public class JsonEntity
+    [DebuggerDisplay("{Name} ({EntityId})")]
+    public class Entity
     {
         [JsonProperty("entity_number")]
-        public int Entity_Number { get; set; }
+        public int EntityId { get; set; }
 
         public string Name { get; set; }
         public Position Position { get; set; }

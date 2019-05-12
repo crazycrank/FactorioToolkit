@@ -1,6 +1,6 @@
-﻿using FactorioToolkit.Blueprints.Model.Data;
+﻿using FactorioToolkit.Infrastructure.Model.Data;
 
-namespace FactorioToolkit.Blueprints.Model
+namespace FactorioToolkit.Infrastructure.Model
 {
     public class Tile
     {

@@ -3,13 +3,13 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-using FactorioToolkit.Blueprints.Model;
+using FactorioToolkit.Infrastructure.Model;
 
 using Ionic.Zlib;
 
 using Newtonsoft.Json;
 
-namespace FactorioToolkit.Blueprints
+namespace FactorioToolkit.Infrastructure
 {
     public class BlueprintUtilities
     {

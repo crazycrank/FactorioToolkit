@@ -5,7 +5,7 @@ namespace FactorioToolkit.Domain.Items.Inserters
 {
     public class FastInserter : InserterBase
     {
-        public FastInserter(Position position, Directions direction, CircuitConnection input, Behaviour behaviour, int? overrideStackSize)
+        public FastInserter(Position position, Directions direction, CircuitAccessPoint input, Behaviour behaviour, int? overrideStackSize)
             : base(position, direction, input, behaviour, overrideStackSize)
         {
         }

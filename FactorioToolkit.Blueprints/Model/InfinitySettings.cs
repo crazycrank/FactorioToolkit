@@ -1,8 +1,8 @@
-﻿using FactorioToolkit.Blueprints.Model.Filter;
+﻿using FactorioToolkit.Infrastructure.Model.Filter;
 
 using Newtonsoft.Json;
 
-namespace FactorioToolkit.Blueprints.Model
+namespace FactorioToolkit.Infrastructure.Model
 {
     public class InfinitySettings
     {

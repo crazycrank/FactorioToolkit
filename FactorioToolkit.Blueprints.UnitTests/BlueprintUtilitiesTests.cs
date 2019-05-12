@@ -1,5 +1,7 @@
 using System.Threading.Tasks;
 
+using FactorioToolkit.Infrastructure;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Newtonsoft.Json;

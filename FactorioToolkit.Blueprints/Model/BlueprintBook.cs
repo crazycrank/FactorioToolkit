@@ -1,8 +1,8 @@
-﻿using FactorioToolkit.Blueprints.Model.Data;
+﻿using FactorioToolkit.Infrastructure.Model.Data;
 
 using Newtonsoft.Json;
 
-namespace FactorioToolkit.Blueprints.Model
+namespace FactorioToolkit.Infrastructure.Model
 {
     public class BlueprintBook
     {

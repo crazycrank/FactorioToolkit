@@ -6,7 +6,13 @@ namespace FactorioToolkit.Domain
 {
     public class Blueprint
     {
-        public string Name { get; set; }
-        public IList<Item> Items { get; set; } = new List<Item>();
+        public Blueprint(string name, IList<Item> items)
+        {
+            Name = name;
+            Items = items;
+        }
+
+        public string Name { get; }
+        public IList<Item> Items { get; } 
     }
 }

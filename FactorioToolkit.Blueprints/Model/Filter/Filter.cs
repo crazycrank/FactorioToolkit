@@ -1,4 +1,4 @@
-﻿namespace FactorioToolkit.Blueprints.Model.Filter
+﻿namespace FactorioToolkit.Infrastructure.Model.Filter
 {
     public abstract class Filter
     {
